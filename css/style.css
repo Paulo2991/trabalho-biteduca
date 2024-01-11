@@ -1,0 +1,218 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	list-style-type:none;
+	text-decoration:none;
+}
+
+header{
+	background-color:black;
+	height:20vh;
+}
+
+body{
+	background-color: #f4f4f4;
+
+}
+
+.menu{
+	display: flex;
+	color: #ffffff;
+	width:100%;
+	padding:30px 0px;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.menu li a{
+	margin-right:1.3rem;
+	font-size:1.3em;
+	color:#fff;
+}
+
+.cards{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	text-align:center;
+}
+
+.card{
+	display:block;
+	align-items:center;
+	width:300px;
+	background-color:white;
+	height:300px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	overflow:hidden;
+	box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+	margin:16px;
+}
+
+.alugueufilme{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	text-align:center;
+}
+
+.filmes img{
+	display:block;
+	align-items:center;
+	width:300px;
+	height:300px;
+	margin:15px;
+}
+
+.filmes figcaption{
+	margin:2px;
+	font-size:16px;
+	font-family:"Arial",sans-serif;
+	text-align:center;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.alugar{
+	width:100px;
+	padding:5px;
+	border-radius:4px;
+	cursor:pointer;
+	text-align:center;
+	color:#fff;
+	background-color:green;
+}
+
+.titulo-servico{
+	font-size: 1.2em;
+	margin-bottom: 8px;
+}
+
+.description-servico{
+	font-size: 1em;
+	color: #555;
+}
+
+.sobre h1{
+	font-size:36px;
+	font-family:"Arial",sans-serif;
+	text-align:center;
+	font-weight:bold;
+	font-style:normal;
+	color:black;
+}
+
+.sobre p{
+	font-size:15px;
+	font-family:"Arial",sans-serif;
+	text-align:center;
+	font-weight:bold;
+	font-style:normal;
+	color:black;
+	text-indent:50px;
+}
+
+.footer{
+	width:100%;
+	height:100%;
+	background-color:black;
+}
+
+.footer h1{
+	text-align:center;
+	color:#fff;
+}
+
+.redessociais img{
+	width:30px;
+	border-radius:8px;
+	margin-right:0.25rem;
+} 
+
+.redessociais {
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	padding:2rem;
+}
+
+@media screen and (max-width:1024px){
+	.alugueufilme{
+		text-align:center;
+	}
+	.filmes img{
+		width:150px;
+		height:150px;
+		border-radius:8px;
+		margin-left:60px;
+	}
+
+	.filmes figcaption{
+		flex-wrap:wrap;
+		flex-direction:column;
+	}
+}
+
+@media screen and (max-width:768px){
+	.alugueufilme{
+		text-align:center;
+	}
+
+	.imagem-menu{
+		display:block;
+		width:12%;
+		justify-content:center;
+		align-items:center;
+	}
+
+
+	.filmes img{
+		width:150px;
+		height:150px;
+		margin:16px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.cards{
+		flex-direction:column;
+	}
+
+	.imagem-menu{
+		display:block;
+		width:40%;
+		justify-content:center;
+		align-items:center;
+	}
+
+	.menu{
+		display:block;
+		padding:10px;
+	}
+
+	.menu ul li {
+		list-style: none; /* Remove os pontos dos links */
+		margin-bottom: 23px;
+		margin-left: 35px;
+	}
+
+	.menu ul li a{
+		width: 25px;
+		height: 3px;
+		background-color: #ffffff;
+		margin: 6px 0;
+	}
+
+	.alugueufilme{
+		flex-direction:column;
+		text-align:center;
+	}
+
+	.filmes img{
+		width:300px;
+		height:300px;
+	}
+}
+
