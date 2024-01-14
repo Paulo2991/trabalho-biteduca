@@ -13,7 +13,6 @@ header{
 
 body{
 	background-color: #f4f4f4;
-
 }
 
 .menu{
@@ -139,9 +138,6 @@ body{
 }
 
 @media screen and (max-width:1024px){
-	.alugueufilme{
-		text-align:center;
-	}
 	.filmes img{
 		width:150px;
 		height:150px;
@@ -150,6 +146,8 @@ body{
 	}
 
 	.filmes figcaption{
+		display:block;
+		text-align:center;
 		flex-wrap:wrap;
 		flex-direction:column;
 	}
@@ -159,14 +157,6 @@ body{
 	.alugueufilme{
 		text-align:center;
 	}
-
-	.imagem-menu{
-		display:block;
-		width:12%;
-		justify-content:center;
-		align-items:center;
-	}
-
 
 	.filmes img{
 		width:150px;
@@ -178,13 +168,6 @@ body{
 @media screen and (max-width:500px){
 	.cards{
 		flex-direction:column;
-	}
-
-	.imagem-menu{
-		display:block;
-		width:40%;
-		justify-content:center;
-		align-items:center;
 	}
 
 	.menu{
